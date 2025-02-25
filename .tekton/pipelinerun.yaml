@@ -3,9 +3,9 @@ kind: PipelineRun
 metadata:
   name: pipeline-pr-main
 annotations:
-  pipelineascode.tekton.dev/on-target-branch: "[main]"
-  pipelineascode.tekton.dev/on-event: "[pull_request, push]"
-  pipelineascode.tekton.dev/task: "git-clone"
+  pipelinesascode.tekton.dev/on-target-branch: "[main]"
+  pipelinesascode.tekton.dev/on-event: "[pull_request, push]"
+  pipelinesascode.tekton.dev/task: "git-clone"
 spec:
   params:
     - name: repo_url
