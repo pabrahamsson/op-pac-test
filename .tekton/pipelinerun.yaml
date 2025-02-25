@@ -1,4 +1,4 @@
-  apiVersion: tekton.dev/v1
+apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
   name: pipeline-pr-main
@@ -43,8 +43,9 @@ spec:
               image: registry.access.redhat.com/ubi8/ubi-micro:9.5
               workingDir: $(workspaces.source.path)
               script: |
-                exit 0 
-  workspaces:  
+                exit 0
+
+  workspaces:
     - name: source
       volumeClaimTemplate:
         spec:
